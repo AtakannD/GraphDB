@@ -4,3 +4,4 @@ What I want to do in this project is to create a database for the fall semester 
 then I started to create my graph database via neo4j. I have defined constraints to prevent duplicated data. In order to ensure the 
 singularity of the relationships I have created, I have defined them as unique. Finally, I wrote a few queries to test the functionality
 of the database I created.
+I used Cypher to create it, but neo4j does not memorize code unlike nodes. That's why I keep my codes in txt file.
