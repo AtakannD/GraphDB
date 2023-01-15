@@ -1,0 +1,580 @@
+// CodeSnippets of IZTECH's Fall Semester Database
+
+
+CREATE(u:University{name:'IZTECH'})
+
+
+CREATE(f:Faculty{name:'Engineering'})
+
+
+CREATE(d1:Departments{name:'Computer Engineering', faculty:'Engineering'})
+CREATE(d2:Departments{name:'BioEngineering', faculty:'Engineering'})
+CREATE(d3:Departments{name:'Environmental Engineering', faculty:'Engineering'})
+CREATE(d4:Departments{name:'Energy Systems Engineering', faculty:'Engineering'})
+CREATE(d5:Departments{name:'Electrical and Electronics Engineering', faculty:'Engineering'})
+CREATE(d6:Departments{name:'Food Engineering', faculty:'Engineering'})
+CREATE(d7:Departments{name:'Civil Engineering', faculty:'Engineering'})
+CREATE(d8:Departments{name:'Chemical Engineering', faculty:'Engineering'})
+CREATE(d9:Departments{name:'Mechanical Engineering', faculty:'Engineering'})
+CREATE(d10:Departments{name:'Materials Science and Engineering', faculty:'Engineering'})
+
+
+CREATE(t1:Title{name:'Dr.'})
+CREATE(t2:Title{name:'Prof. Dr.'})
+CREATE(t3:Title{name:'Assoc. Prof. Dr.'})
+CREATE(t4:Title{name:'Asst. Prof. Dr.'})
+
+
+
+
+// ----------------Computer Engineering----------------
+
+CREATE(l1:Lectures{name:'CENG111'})
+CREATE(l2:Lectures{name:'CENG415'})
+CREATE(l3:Lectures{name:'CENG483'})
+CREATE(l4:Lectures{name:'CENG115'})
+CREATE(l5:Lectures{name:'CENG505'})
+CREATE(l6:Lectures{name:'SEDS562'})
+CREATE(l7:Lectures{name:'CENG608'})
+CREATE(l8:Lectures{name:'CENG113'})
+CREATE(l9:Lectures{name:'CENG464'})
+CREATE(l10:Lectures{name:'CENG421'})
+CREATE(l11:Lectures{name:'CENG211'})
+CREATE(l12:Lectures{name:'CENG552'})
+CREATE(l13:Lectures{name:'SEDS481'})
+CREATE(l14:Lectures{name:'CENG215'})
+CREATE(l15:Lectures{name:'CENG525'})
+CREATE(l16:Lectures{name:'CENG213'})
+CREATE(l17:Lectures{name:'CENG534'})
+CREATE(l18:Lectures{name:'CENG315'})
+CREATE(l19:Lectures{name:'SEDS502'})
+CREATE(l20:Lectures{name:'CENG643'})
+CREATE(l21:Lectures{name:'CENG391'})
+CREATE(l22:Lectures{name:'CENG463'})
+CREATE(l23:Lectures{name:'CENG311'})
+CREATE(l24:Lectures{name:'CENG443'})
+CREATE(l25:Lectures{name:'CENG323'})
+CREATE(l26:Lectures{name:'SEDS520'})
+CREATE(l27:Lectures{name:'CENG555'})
+CREATE(l28:Lectures{name:'CENG461'})
+CREATE(l29:Lectures{name:'CENG533'})
+CREATE(l30:Lectures{name:'CENG487'})
+CREATE(l31:Lectures{name:'CENG465'})
+CREATE(l32:Lectures{name:'CENG541'})
+CREATE(l33:Lectures{name:'SEDS542'})
+CREATE(l34:Lectures{name:'CENG471'})
+CREATE(l35:Lectures{name:'CENG611'})
+CREATE(l36:Lectures{name:'CENG411'})
+CREATE(l37:Lectures{name:'CENG518'})
+
+CREATE(i1:Instructor{dept_name:'Computer Engineering', name:'Berat Alper Erol', title:'Dr.', lectures:['CENG111', 'CENG415', 'CENG483']})
+CREATE(i2:Instructor{dept_name:'Computer Engineering', name:'Cüneyt F. Bazlamaçcı', title:'Prof. Dr.', lectures:['CENG115', 'CENG505', 'SEDS562']})
+CREATE(i3:Instructor{dept_name:'Computer Engineering', name:'Mustafa Özuysal', title:'Assoc. Prof. Dr.', lectures:['CENG115', 'CENG608']})
+CREATE(i4:Instructor{dept_name:'Computer Engineering', name:'Buket Erşahin', title:'Dr.', lectures:['CENG113', 'CENG464']})
+CREATE(i5:Instructor{dept_name:'Computer Engineering', name:'Turgut Kalfaoğlu', title:'', lectures:['CENG113', 'CENG421']})
+CREATE(i6:Instructor{dept_name:'Computer Engineering', name:'Tuğkan Tuğlular', title:'Assoc. Prof. Dr.', lectures:['CENG211', 'CENG552', 'SEDS481']})
+CREATE(i7:Instructor{dept_name:'Computer Engineering', name:'Tolga Ayav', title:'Assoc. Prof. Dr.', lectures:['CENG215', 'CENG525']})
+CREATE(i8:Instructor{dept_name:'Computer Engineering', name:'Selma Tekir', title:'Asst. Prof. Dr.', lectures:['CENG213', 'CENG534']})
+CREATE(i9:Instructor{dept_name:'Computer Engineering', name:'Belgin Ergenç Bostanoğlu', title:'Assoc. Prof. Dr.', lectures:['CENG315', 'CENG643', 'SEDS502']})
+CREATE(i10:Instructor{dept_name:'Computer Engineering', name:'Yalın Baştanlar', title:'Assoc. Prof. Dr.', lectures:['CENG391', 'CENG463']})
+CREATE(i11:Instructor{dept_name:'Computer Engineering', name:'Işıl Öz', title:'Asst. Prof. Dr.', lectures:['CENG311', 'CENG443']})
+CREATE(i12:Instructor{dept_name:'Computer Engineering', name:'Onur Demirörs', title:'Prof. Dr.', lectures:['CENG323', 'CENG555', 'SEDS520']})
+CREATE(i13:Instructor{dept_name:'Computer Engineering', name:'Görkem Giray', title:'Dr.', lectures:['CENG323']})
+CREATE(i14:Instructor{dept_name:'Computer Engineering', name:'Görkem Kılınç Soylu', title:'Dr.', lectures:['CENG323']})
+CREATE(i15:Instructor{dept_name:'Computer Engineering', name:'Nesli Erdoğmuş', title:'Asst. Prof. Dr.', lectures:['CENG461', 'CENG533']})
+CREATE(i16:Instructor{dept_name:'Computer Engineering', name:'Erdem İhsan Taylan', title:'', lectures:['CENG487']})
+CREATE(i17:Instructor{dept_name:'Computer Engineering', name:'Damla Oğuz', title:'Asst. Prof. Dr.', lectures:['CENG465', 'CENG541', 'SEDS542']})
+CREATE(i18:Instructor{dept_name:'Computer Engineering', name:'Serap Şahin', title:'Asst. Prof. Dr.', lectures:['CENG471', 'CENG611']})
+CREATE(i19:Instructor{dept_name:'Computer Engineering', name:'Burak Galip Aslan', title:'Dr.', lectures:['CENG411', 'CENG518']})
+
+
+
+
+// ----------------BIOENGINEERING----------------
+
+CREATE(l1:Lectures{name:'BE101'})
+CREATE(l2:Lectures{name:'BE407'})
+CREATE(l3:Lectures{name:'BE203'})
+CREATE(l4:Lectures{name:'BE512'})
+CREATE(l5:Lectures{name:'BE201'})
+CREATE(l6:Lectures{name:'BE415'})
+CREATE(l7:Lectures{name:'BE501'})
+CREATE(l8:Lectures{name:'BE205'})
+CREATE(l9:Lectures{name:'BE309'})
+CREATE(l10:Lectures{name:'BE451'})
+CREATE(l11:Lectures{name:'BE403'})
+CREATE(l12:Lectures{name:'BE301'})
+CREATE(l13:Lectures{name:'BE505'})
+CREATE(l14:Lectures{name:'BE591'})
+CREATE(l15:Lectures{name:'BE307'})
+CREATE(l16:Lectures{name:'BE305'})
+CREATE(l17:Lectures{name:'BE417'})
+CREATE(l18:Lectures{name:'BE311'})
+CREATE(l19:Lectures{name:'BE405'})
+CREATE(l20:Lectures{name:'BE413'})
+CREATE(l21:Lectures{name:'BE401'})
+CREATE(l22:Lectures{name:'BE598'})
+CREATE(l23:Lectures{name:'BE698'})
+CREATE(l24:Lectures{name:'BE504'})
+CREATE(l25:Lectures{name:'BE409'})
+CREATE(l26:Lectures{name:'BE410'})
+CREATE(l27:Lectures{name:'BE547'})
+
+CREATE(i1:Instructor{dept_name:'BioEngineering', name:'Erdal Bedir', title:'Prof. Dr.', lectures:['BE101', 'BE407']})
+CREATE(i2:Instructor{dept_name:'BioEngineering', name:'Nur Başak Sürmeli', title:'Assoc. Prof. Dr.', lectures:['BE203', 'BE512']})
+CREATE(i3:Instructor{dept_name:'BioEngineering', name:'Cumhur Tekin', title:'Assoc. Prof. Dr.', lectures:['BE201', 'BE415', 'BE501']})
+CREATE(i4:Instructor{dept_name:'BioEngineering', name:'Ceyda Öksel', title:'Dr.', lectures:['BE205']})
+CREATE(i5:Instructor{dept_name:'BioEngineering', name:'Volga Bulmuş', title:'Prof. Dr.', lectures:['BE309', 'BE451', 'BE403']})
+CREATE(i6:Instructor{dept_name:'BioEngineering', name:'Gülistan Özçivici', title:'Assoc. Prof. Dr.', lectures:['BE307']})
+CREATE(i7:Instructor{dept_name:'BioEngineering', name:'Deniz Yücesoy', title:'Dr.', lectures:['BE301', 'BE505', 'BE591']})
+CREATE(i8:Instructor{dept_name:'BioEngineering', name:'Arzu Uyar', title:'Dr.', lectures:['BE305', 'BE417']})
+CREATE(i9:Instructor{dept_name:'BioEngineering', name:'Ahu Arslan Yıldız', title:'Assoc. Prof. Dr.', lectures:['BE410', 'BE547']})
+CREATE(i10:Instructor{dept_name:'BioEngineering', name:'Betül Aldemir Dikici', title:'Dr.', lectures:['BE311']})
+CREATE(i11:Instructor{dept_name:'BioEngineering', name:'Serkan Dikici', title:'Dr.', lectures:['BE405', 'BE413']})
+CREATE(i12:Instructor{dept_name:'BioEngineering', name:'Engin Özçivici', title:'Prof. Dr.', lectures:['BE401', 'BE598', 'BE698', 'BE504']})
+CREATE(i13:Instructor{dept_name:'BioEngineering', name:'Hümeyra Taşkent Sezgin', title:'Dr.', lectures:['BE409']})
+
+
+
+
+// ----------------ENVIRONMENTAL ENGINEERING----------------
+
+CREATE(l1:Lectures{name:'ENV101'})
+CREATE(l2:Lectures{name:'ENV317'})
+CREATE(l3:Lectures{name:'ENV506'})
+CREATE(l4:Lectures{name:'ENV601'})
+CREATE(l5:Lectures{name:'ENV201'})
+CREATE(l6:Lectures{name:'ENV203'})
+CREATE(l7:Lectures{name:'ENV602'})
+CREATE(l8:Lectures{name:'ENV217'})
+CREATE(l9:Lectures{name:'ENV215'})
+CREATE(l10:Lectures{name:'ENV319'})
+CREATE(l11:Lectures{name:'ENV591'})
+CREATE(l12:Lectures{name:'ENV311'})
+CREATE(l13:Lectures{name:'ENV315'})
+CREATE(l14:Lectures{name:'ENV313'})
+CREATE(l15:Lectures{name:'ENV698'})
+CREATE(l16:Lectures{name:'ENV510'})
+CREATE(l17:Lectures{name:'ENV321'})
+CREATE(l18:Lectures{name:'ENV516'})
+CREATE(l19:Lectures{name:'ENV598'})
+CREATE(l20:Lectures{name:'ENV515'})
+
+CREATE(i1:Instructor{dept_name:'Environmental Engineering', name:'Sait Sofuoğlu', title:'Prof. Dr.', lectures:['ENV101', 'ENV317', 'ENV506', 'ENV601']})
+CREATE(i2:Instructor{dept_name:'Environmental Engineering', name:'Hatice Eser Ökten', title:'Assoc. Prof. Dr.', lectures:['ENV201', 'ENV203', 'ENV602']})
+CREATE(i3:Instructor{dept_name:'Environmental Engineering', name:'Orhan Gündüz', title:'Prof. Dr.', lectures:['ENV217']})
+CREATE(i4:Instructor{dept_name:'Environmental Engineering', name:'Altan Özkan', title:'Asst. Prof. Dr.', lectures:['ENV215', 'ENV319', 'ENV591']})
+CREATE(i5:Instructor{dept_name:'Environmental Engineering', name:'Reginald Kogbara', title:'Assoc. Prof. Dr.', lectures:['ENV311']})
+CREATE(i6:Instructor{dept_name:'Environmental Engineering', name:'Orhan Gürbüz', title:'Prof. Dr.', lectures:['ENV315']})
+CREATE(i7:Instructor{dept_name:'Environmental Engineering', name:'Hale Demirtepe', title:'Asst. Prof. Dr.', lectures:['ENV313', 'ENV698', 'ENV510']})
+CREATE(i8:Instructor{dept_name:'Environmental Engineering', name:'Alper Bayrakdar', title:'Assoc. Prof. Dr.', lectures:['ENV321', 'ENV516']})
+CREATE(i9:Instructor{dept_name:'Environmental Engineering', name:'Mehmet Ali Küçüker', title:'Dr.', lectures:['ENV515', 'ENV598']})
+
+
+
+
+// ----------------ELECTRICAL AND ELECTRONICS ENGINEERING----------------
+
+CREATE(l1:Lectures{name:'EE103'})
+CREATE(l2:Lectures{name:'EE271'})
+CREATE(l3:Lectures{name:'EE470'})
+CREATE(l4:Lectures{name:'EE491'})
+CREATE(l5:Lectures{name:'EE101'})
+CREATE(l6:Lectures{name:'EE333'})
+CREATE(l7:Lectures{name:'EE531'})
+CREATE(l8:Lectures{name:'EE221'})
+CREATE(l9:Lectures{name:'EE510'})
+CREATE(l10:Lectures{name:'EE201'})
+CREATE(l11:Lectures{name:'EE203'})
+CREATE(l12:Lectures{name:'EE567'})
+CREATE(l13:Lectures{name:'EE313'})
+CREATE(l14:Lectures{name:'EE315'})
+CREATE(l15:Lectures{name:'EE499'})
+CREATE(l16:Lectures{name:'EE502'})
+CREATE(l17:Lectures{name:'EE323'})
+CREATE(l18:Lectures{name:'EE521'})
+CREATE(l19:Lectures{name:'EE331'})
+CREATE(l20:Lectures{name:'EE546'})
+CREATE(l21:Lectures{name:'EE451'})
+CREATE(l22:Lectures{name:'EE598'})
+CREATE(l23:Lectures{name:'EE698'})
+CREATE(l24:Lectures{name:'EE544'})
+CREATE(l25:Lectures{name:'EE412'})
+CREATE(l26:Lectures{name:'EE513'})
+CREATE(l27:Lectures{name:'EE401'})
+CREATE(l28:Lectures{name:'EE455'})
+CREATE(l29:Lectures{name:'EE551'})
+CREATE(l30:Lectures{name:'EE431'})
+CREATE(l31:Lectures{name:'EE547'})
+CREATE(l32:Lectures{name:'EE533'})
+CREATE(l33:Lectures{name:'EE801'})
+CREATE(l34:Lectures{name:'EE802'})
+CREATE(l35:Lectures{name:'EE803'})
+CREATE(l36:Lectures{name:'EE804'})
+CREATE(l37:Lectures{name:'EE805'})
+CREATE(l38:Lectures{name:'EE806'})
+CREATE(l39:Lectures{name:'EE807'})
+CREATE(l40:Lectures{name:'EE808'})
+CREATE(l41:Lectures{name:'EE809'})
+CREATE(l42:Lectures{name:'EE810'})
+CREATE(l43:Lectures{name:'EE811'})
+CREATE(l44:Lectures{name:'EE812'})
+
+CREATE(i1:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Mahmut Cenk Efeler', title:'Dr.', lectures:['EE103', 'EE271', 'EE470', 'EE491']})
+CREATE(i2:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Bilge Karaçalı', title:'Prof. Dr.', lectures:['EE101', 'EE333', 'EE531', 'EE491', 'EE807']})
+CREATE(i3:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Mehmet Salih Dinleyici', title:'Prof. Dr.', lectures:['EE221', 'EE510', 'EE801', 'EE491']})
+CREATE(i4:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Abdurrahman Gümüş', title:'Dr.', lectures:['EE201', 'EE203', 'EE567', 'EE491', 'EE808']})
+CREATE(i5:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Mehmet Serkan Apaydın', title:'Dr.', lectures:['EE313', 'EE315', 'EE499','EE502', 'EE491', 'EE809']})
+CREATE(i6:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Alp Kuştepeli', title:'Prof. Dr.', lectures:['EE323', 'EE521', 'EE491', 'EE804']})
+CREATE(i7:Instructor{dept_name:'Electrical and Electronics Engineering', name:'M. Zübeyir Ünlü', title:'Dr.', lectures:['EE331', 'EE546', 'EE491', 'EE812']})
+CREATE(i8:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Barış Atakan', title:'Prof. Dr.', lectures:['EE451', 'EE598', 'EE698','EE544', 'EE491', 'EE810']})
+CREATE(i9:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Kıvılcım Yüksel Aldoğan', title:'Assoc. Prof. Dr.', lectures:['EE412', 'EE513', 'EE491', 'EE806']})
+CREATE(i10:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Ferit Acar Savacı', title:'Prof. Dr.', lectures:['EE401', 'EE491', 'EE805']})
+CREATE(i11:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Berna Özbek', title:'Assoc. Prof. Dr.', lectures:['EE455', 'EE551', 'EE491', 'EE811']})
+CREATE(i12:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Şevket Gümüştekin', title:'Assoc. Prof. Dr.', lectures:['EE431', 'EE547', 'EE491', 'EE803']})
+CREATE(i13:Instructor{dept_name:'Electrical and Electronics Engineering', name:'Mustafa Aziz Altınkaya', title:'Prof. Dr.', lectures:['EE533', 'EE491', 'EE802']})
+
+
+
+
+// ----------------FOOD ENGINEERING----------------
+
+CREATE(l1:Lectures{name:'FE105'})
+CREATE(l2:Lectures{name:'FE420'})
+CREATE(l3:Lectures{name:'FE403'})
+CREATE(l4:Lectures{name:'FE533'})
+CREATE(l5:Lectures{name:'FE410'})
+CREATE(l6:Lectures{name:'FE580'})
+CREATE(l7:Lectures{name:'FE534'})
+CREATE(l8:Lectures{name:'FE401'})
+CREATE(l9:Lectures{name:'FE504'})
+CREATE(l10:Lectures{name:'FE509'})
+CREATE(l11:Lectures{name:'FE423'})
+CREATE(l12:Lectures{name:'FE411'})
+CREATE(l13:Lectures{name:'FE532'})
+CREATE(l14:Lectures{name:'FE211'})
+CREATE(l15:Lectures{name:'FE303'})
+CREATE(l16:Lectures{name:'FE547'})
+CREATE(l17:Lectures{name:'FE419'})
+CREATE(l18:Lectures{name:'FE503'})
+CREATE(l19:Lectures{name:'FE598'})
+CREATE(l20:Lectures{name:'FE698'})
+CREATE(l21:Lectures{name:'FE526'})
+CREATE(l22:Lectures{name:'FE201'})
+CREATE(l23:Lectures{name:'FE414'})
+CREATE(l24:Lectures{name:'FE535'})
+CREATE(l25:Lectures{name:'FE515'})
+CREATE(l26:Lectures{name:'FE539'})
+CREATE(l27:Lectures{name:'FE540'})
+CREATE(l28:Lectures{name:'FE323'})
+CREATE(l29:Lectures{name:'FE305'})
+CREATE(l30:Lectures{name:'FE321'})
+CREATE(l31:Lectures{name:'FE407'})
+CREATE(l32:Lectures{name:'FE301'})
+
+CREATE(i1:Instructor{dept_name:'Food Engineering', name:'Ahmet Yemenicioğlu', title:'Prof. Dr.', lectures:['FE105', 'FE420', 'FE403', 'FE533']})
+CREATE(i2:Instructor{dept_name:'Food Engineering', name:'Efe Sezgin', title:'Assoc. Prof. Dr.', lectures:['FE420', 'FE410', 'FE580', 'FE534']})
+CREATE(i3:Instructor{dept_name:'Food Engineering', name:'Figen Korel', title:'Prof. Dr.', lectures:['FE105', 'FE401', 'FE504', 'FE509']})
+CREATE(i4:Instructor{dept_name:'Food Engineering', name:'Şebnem Harsa', title:'Prof. Dr.', lectures:['FE105', 'FE420', 'FE423', 'FE411']})
+CREATE(i5:Instructor{dept_name:'Food Engineering', name:'Oğuz Büyükkileci', title:'Assoc. Prof. Dr.', lectures:['FE105', 'FE420', 'FE403']})
+CREATE(i6:Instructor{dept_name:'Food Engineering', name:'Beste Bayramoğlu', title:'Asst. Prof. Dr.', lectures:['FE105', 'FE211', 'FE303', 'FE532']})
+CREATE(i7:Instructor{dept_name:'Food Engineering', name:'Çağatay Ceylan', title:'Assoc. Prof. Dr.', lectures:['FE105', 'FE419', 'FE503', 'FE598', 'FE698']})
+CREATE(i8:Instructor{dept_name:'Food Engineering', name:'Sevcan Ünlütürk', title:'Prof. Dr.', lectures:['FE105', 'FE420', 'FE403', 'FE532', 'FE526']})
+CREATE(i9:Instructor{dept_name:'Food Engineering', name:'Figen Tokatlı', title:'Prof. Dr.', lectures:['FE201', 'FE420', 'FE414', 'FE535']})
+CREATE(i10:Instructor{dept_name:'Food Engineering', name:'Ayşe Handan Baysal', title:'Assoc. Prof. Dr.', lectures:['FE515', 'FE420', 'FE539', 'FE540']})
+CREATE(i11:Instructor{dept_name:'Food Engineering', name:'Banu Özen', title:'Prof. Dr.', lectures:['FE305', 'FE420', 'FE321', 'FE407']})
+CREATE(i12:Instructor{dept_name:'Food Engineering', name:'Şükrü Güleç', title:'Assoc. Prof. Dr.', lectures:['FE323']})
+CREATE(i13:Instructor{dept_name:'Food Engineering', name:'Sibel Uzuner', title:'Assoc. Prof. Dr.', lectures:['FE301', 'FE532', 'FE403', 'FE547']})
+
+
+
+
+// ----------------CHEMICAL ENGINEERING----------------
+
+CREATE(l3:Lectures{name:'CHE101'})
+CREATE(l4:Lectures{name:'CHE488'})
+CREATE(l5:Lectures{name:'CHE211'})
+CREATE(l6:Lectures{name:'CHE321'})
+CREATE(l7:Lectures{name:'CHE219'})
+CREATE(l8:Lectures{name:'CHE420'})
+CREATE(l9:Lectures{name:'CHE220'})
+CREATE(l10:Lectures{name:'CHE598'})
+CREATE(l11:Lectures{name:'CHE601'})
+CREATE(l12:Lectures{name:'CHE213'})
+CREATE(l13:Lectures{name:'CHE201'})
+CREATE(l14:Lectures{name:'CHE542'})
+CREATE(l15:Lectures{name:'CHE525'})
+CREATE(l16:Lectures{name:'CHE311'})
+CREATE(l17:Lectures{name:'CHE424'})
+CREATE(l18:Lectures{name:'CHE594'})
+CREATE(l19:Lectures{name:'CHE301'})
+CREATE(l20:Lectures{name:'CHE402'})
+CREATE(l21:Lectures{name:'CHE549'})
+CREATE(l22:Lectures{name:'CHE505'})
+CREATE(l23:Lectures{name:'CHE439'})
+CREATE(l24:Lectures{name:'CHE410'})
+CREATE(l25:Lectures{name:'CHE567'})
+CREATE(l26:Lectures{name:'CHE591'})
+CREATE(l27:Lectures{name:'CHE499'})
+CREATE(l28:Lectures{name:'CHE545'})
+
+CREATE(i1:Instructor{dept_name:'Chemical Engineering', name:'Özgenç Ebil', title:'Assoc. Prof. Dr.', lectures:['CHE101', 'CHE488']})
+CREATE(i2:Instructor{dept_name:'Chemical Engineering', name:'Ayben Top', title:'Assoc. Prof. Dr.', lectures:['CHE211', 'CHE321']})
+CREATE(i3:Instructor{dept_name:'Chemical Engineering', name:'Aysun Sofuoğlu', title:'Prof. Dr.', lectures:['CHE219', 'CHE420']})
+CREATE(i4:Instructor{dept_name:'Chemical Engineering', name:'Mehmet Polat', title:'Prof. Dr.', lectures:['CHE220', 'CHE598', 'CHE601']})
+CREATE(i5:Instructor{dept_name:'Chemical Engineering', name:'Burcu Öztürk', title:'Dr.', lectures:['CHE213']})
+CREATE(i6:Instructor{dept_name:'Chemical Engineering', name:'Aslı Yüksel Özşen', title:'Assoc. Prof. Dr.', lectures:['CHE201', 'CHE542']})
+CREATE(i7:Instructor{dept_name:'Chemical Engineering', name:'Fikret İnal', title:'Prof. Dr.', lectures:['CHE201', 'CHE525']})
+CREATE(i8:Instructor{dept_name:'Chemical Engineering', name:'Sevgi Kılıç Özdemir', title:'Assoc. Prof. Dr.', lectures:['CHE311']})
+CREATE(i9:Instructor{dept_name:'Chemical Engineering', name:'Selahattin Yılmaz', title:'Prof. Dr.', lectures:['CHE311', 'CHE424', 'CHE594']})
+CREATE(i10:Instructor{dept_name:'Chemical Engineering', name:'Abhishek Dutta', title:'Assoc. Prof. Dr.', lectures:['CHE301']})
+CREATE(i11:Instructor{dept_name:'Chemical Engineering', name:'Erdal Uzunlar', title:'Asst. Prof. Dr.', lectures:['CHE301']})
+CREATE(i12:Instructor{dept_name:'Chemical Engineering', name:'Can Kızılkaya', title:'Asst. Prof. Dr.', lectures:['CHE402', 'CHE549']})
+CREATE(i13:Instructor{dept_name:'Chemical Engineering', name:'Funda Tıhmınoğlu', title:'Prof. Dr.', lectures:['CHE420', 'CHE439']})
+CREATE(i14:Instructor{dept_name:'Chemical Engineering', name:'Sacide Alsoy Altınkaya', title:'Prof. Dr.', lectures:['CHE420', 'CHE505']})
+CREATE(i15:Instructor{dept_name:'Chemical Engineering', name:'Ekrem Özdemir', title:'Prof. Dr.', lectures:['CHE410', 'CHE567', 'CHE591']})
+CREATE(i16:Instructor{dept_name:'Chemical Engineering', name:'Muhsin Çiftçioğlu', title:'Prof. Dr.', lectures:['CHE499']})
+CREATE(i17:Instructor{dept_name:'Chemical Engineering', name:'Erol Şeker', title:'Prof. Dr.', lectures:['CHE545']})
+
+
+
+
+// ----------------MECHANICAL ENGINEERING----------------
+
+CREATE(l1:Lectures{name:'ME467'})
+CREATE(l2:Lectures{name:'ME445'})
+CREATE(l3:Lectures{name:'ME311'})
+CREATE(l4:Lectures{name:'ME113'})
+CREATE(l5:Lectures{name:'ME513'})
+CREATE(l6:Lectures{name:'ME251'})
+CREATE(l7:Lectures{name:'ME221'})
+CREATE(l8:Lectures{name:'ME559'})
+CREATE(l9:Lectures{name:'ME563'})
+CREATE(l10:Lectures{name:'ME590'})
+CREATE(l11:Lectures{name:'ME331'})
+CREATE(l12:Lectures{name:'ME477'})
+CREATE(l13:Lectures{name:'ME409'})
+CREATE(l14:Lectures{name:'ME587'})
+CREATE(l15:Lectures{name:'ME501'})
+CREATE(l16:Lectures{name:'ME484'})
+CREATE(l17:Lectures{name:'ME522'})
+CREATE(l18:Lectures{name:'ME599'})
+CREATE(l19:Lectures{name:'ME499'})
+CREATE(l20:Lectures{name:'ME343'})
+CREATE(l21:Lectures{name:'ME401'})
+CREATE(l22:Lectures{name:'ME323'})
+CREATE(l23:Lectures{name:'ME521'})
+CREATE(l24:Lectures{name:'ME341'})
+CREATE(l25:Lectures{name:'ME207'})
+CREATE(l26:Lectures{name:'ME698'})
+CREATE(l27:Lectures{name:'ME301'})
+CREATE(l28:Lectures{name:'ME598'})
+CREATE(l29:Lectures{name:'ME438'})
+CREATE(l30:Lectures{name:'ME460'})
+CREATE(l31:Lectures{name:'ME574'})
+CREATE(l32:Lectures{name:'ME101'})
+CREATE(l33:Lectures{name:'ME457'})
+
+CREATE(i1:Instructor{dept_name:'Mechanical Engineering', name:'Özgür Günelsu', title:'Dr.', lectures:['ME467', 'ME445', 'ME311', 'ME113']})
+CREATE(i2:Instructor{dept_name:'Mechanical Engineering', name:'Sinan Kandermir', title:'Assoc. Prof. Dr.', lectures:['ME513', 'ME251']})
+CREATE(i3:Instructor{dept_name:'Mechanical Engineering', name:'Alper Taşdemirci', title:'Prof. Dr.', lectures:['ME221', 'ME559']})
+CREATE(i4:Instructor{dept_name:'Mechanical Engineering', name:'Seçil Artem', title:'Prof. Dr.', lectures:['ME221', 'ME563', 'ME590']})
+CREATE(i5:Instructor{dept_name:'Mechanical Engineering', name:'Gökhan Kiper', title:'Prof. Dr.', lectures:['ME331', 'ME477']})
+CREATE(i6:Instructor{dept_name:'Mechanical Engineering', name:'Serhan Özdemir', title:'Prof. Dr.', lectures:['ME409', 'ME587']})
+CREATE(i7:Instructor{dept_name:'Mechanical Engineering', name:'Mustafa Güden', title:'Prof. Dr.', lectures:['ME501', 'ME484']})
+CREATE(i8:Instructor{dept_name:'Mechanical Engineering', name:'Fatih Toksoy', title:'Dr.', lectures:['ME251', 'ME522', 'ME599', 'ME499']})
+CREATE(i9:Instructor{dept_name:'Mechanical Engineering', name:'Kasım Toprak', title:'Dr.', lectures:['ME343']})
+CREATE(i10:Instructor{dept_name:'Mechanical Engineering', name:'Benay Üzer', title:'Dr.', lectures:['ME401', 'ME323']})
+CREATE(i11:Instructor{dept_name:'Mechanical Engineering', name:'Erdal Çetin', title:'Prof. Dr.', lectures:['ME521', 'ME341']})
+CREATE(i12:Instructor{dept_name:'Mechanical Engineering', name:'Hüseyin Sarıaltın', title:'Dr.', lectures:['ME207']})
+CREATE(i13:Instructor{dept_name:'Mechanical Engineering', name:'Ünver Özkol', title:'Assoc. Prof. Dr.', lectures:['ME698', 'ME301', 'ME598', 'ME438']})
+CREATE(i14:Instructor{dept_name:'Mechanical Engineering', name:'Can Dede', title:'Prof. Dr.', lectures:['ME460', 'ME574']})
+CREATE(i15:Instructor{dept_name:'Mechanical Engineering', name:'Şenay Mihçin', title:'Dr.', lectures:['ME101', 'ME457']})
+CREATE(i16:Instructor{dept_name:'Mechanical Engineering', name:'Timuçin Eriş', title:'Dr.', lectures:['ME113']})
+
+
+
+
+// ----------------MATERIALS SCIENCE AND ENGINERRING----------------
+
+CREATE(l1:Lectures{name:'MSE113'})
+CREATE(l2:Lectures{name:'MSE100'})
+CREATE(l3:Lectures{name:'MSE205'})
+CREATE(l4:Lectures{name:'MSE201'})
+CREATE(l5:Lectures{name:'MSE215'})
+CREATE(l6:Lectures{name:'MSE313'})
+CREATE(l7:Lectures{name:'MSE305'})
+CREATE(l8:Lectures{name:'MSE315'})
+CREATE(l9:Lectures{name:'MSE307'})
+CREATE(l10:Lectures{name:'MSE309'})
+CREATE(l11:Lectures{name:'MSE483'})
+CREATE(l12:Lectures{name:'MSE451'})
+CREATE(l13:Lectures{name:'MSE479'})
+
+CREATE(i1:Instructor{dept_name:'Materials Science and Engineering', name:'Timuçin Eriş', title:'', lectures:['MSE113']})
+CREATE(i2:Instructor{dept_name:'Materials Science and Engineering', name:'Nurunnisa Atçeken', title:'Dr.', lectures:['MSE100']})
+CREATE(i3:Instructor{dept_name:'Materials Science and Engineering', name:'Mustafa M. Demir', title:'Prof. Dr.', lectures:['MSE205']})
+CREATE(i4:Instructor{dept_name:'Materials Science and Engineering', name:'Çekdar Vakıf Ahmetoğlu', title:'Prof. Dr.', lectures:['MSE201']})
+CREATE(i5:Instructor{dept_name:'Materials Science and Engineering', name:'Haldun Sevinçli', title:'Prof. Dr.', lectures:['MSE215', 'MSE313']})
+CREATE(i6:Instructor{dept_name:'Materials Science and Engineering', name:'Mahmut Barış Okatan', title:'Dr.', lectures:['MSE305']})
+CREATE(i7:Instructor{dept_name:'Materials Science and Engineering', name:'Mertol Gökelma', title:'Dr.', lectures:['MSE315']})
+CREATE(i8:Instructor{dept_name:'Materials Science and Engineering', name:'Kemal Davut', title:'Dr.', lectures:['MSE307', 'MSE309']})
+CREATE(i9:Instructor{dept_name:'Materials Science and Engineering', name:'Fatih Toptan', title:'Assoc. Prof. Dr.', lectures:['MSE483', 'MSE451']})
+CREATE(i10:Instructor{dept_name:'Materials Science and Engineering', name:'Serdar Akkurt', title:'Prof. Dr.', lectures:['MSE479']})
+
+
+
+
+// ----------------CIVIL ENGINEERING----------------
+
+CREATE(l1:Lectures{name:'CE221'})
+CREATE(l2:Lectures{name:'CE443'})
+CREATE(l3:Lectures{name:'CE101'})
+CREATE(l4:Lectures{name:'CE421'})
+CREATE(l5:Lectures{name:'CE205'})
+CREATE(l6:Lectures{name:'CE224'})
+CREATE(l7:Lectures{name:'CE231'})
+CREATE(l8:Lectures{name:'CE203'})
+CREATE(l9:Lectures{name:'CE351'})
+CREATE(l10:Lectures{name:'CE452'})
+CREATE(l11:Lectures{name:'CE454'})
+CREATE(l12:Lectures{name:'CE301'})
+CREATE(l13:Lectures{name:'CE371'})
+CREATE(l14:Lectures{name:'CE361'})
+CREATE(l15:Lectures{name:'CE464'})
+CREATE(l16:Lectures{name:'CE321'})
+CREATE(l17:Lectures{name:'CE471'})
+CREATE(l18:Lectures{name:'CE430'})
+CREATE(l19:Lectures{name:'CE422'})
+CREATE(l20:Lectures{name:'CE480'})
+
+CREATE(i1:Instructor{dept_name:'Civil Engineering', name:'Korhan Deniz Dalgıç', title:'Dr.', lectures:['CE221', 'CE443']})
+CREATE(i2:Instructor{dept_name:'Civil Engineering', name:'Cemalettin Dönmez', title:'Prof. Dr.', lectures:['CE101', 'CE421']})
+CREATE(i3:Instructor{dept_name:'Civil Engineering', name:'Engin Aktaş', title:'Prof. Dr.', lectures:['CE205', 'CE224']})
+CREATE(i4:Instructor{dept_name:'Civil Engineering', name:'Burak Dindaroğlu', title:'Dr.', lectures:['CE231']})
+CREATE(i5:Instructor{dept_name:'Civil Engineering', name:'Alper Baba', title:'Prof. Dr.', lectures:['CE203']})
+CREATE(i6:Instructor{dept_name:'Civil Engineering', name:'Volkan Emre Uz', title:'Assoc. Prof. Dr.', lectures:['CE351', 'CE452', 'CE454']})
+CREATE(i7:Instructor{dept_name:'Civil Engineering', name:'Gürsoy Turan', title:'Assoc. Prof. Dr.', lectures:['CE301']})
+CREATE(i8:Instructor{dept_name:'Civil Engineering', name:'Doğan Kısacık', title:'Dr.', lectures:['CE371']})
+CREATE(i9:Instructor{dept_name:'Civil Engineering', name:'Volkan İşbuğa', title:'Dr.', lectures:['CE361','CE464']})
+CREATE(i10:Instructor{dept_name:'Civil Engineering', name:'İzzet Özdemir', title:'Assoc. Prof. Dr.', lectures:['CE321']})
+CREATE(i11:Instructor{dept_name:'Civil Engineering', name:'Şebnem Elçi', title:'Prof. Dr.', lectures:['CE471']})
+CREATE(i12:Instructor{dept_name:'Civil Engineering', name:'Selçuk Saatçi', title:'Dr.', lectures:['CE430', 'CE422']})
+CREATE(i13:Instructor{dept_name:'Civil Engineering', name:'Bergüzar Özbahçeci', title:'Assoc. Prof. Dr.', lectures:['CE480']})
+
+
+
+
+// ----------------ENERGY SYSTEMS ENGINEERING----------------
+
+CREATE(l1:Lectures{name:'ESE321'})
+CREATE(l2:Lectures{name:'ESE301'})
+CREATE(l3:Lectures{name:'ESE311'})
+CREATE(l4:Lectures{name:'ESE420'})
+CREATE(l5:Lectures{name:'ESE440'})
+CREATE(l6:Lectures{name:'ESE201'})
+CREATE(l7:Lectures{name:'ESE406'})
+CREATE(l8:Lectures{name:'ESE410'})
+CREATE(l9:Lectures{name:'ESE101'})
+CREATE(l10:Lectures{name:'ESE301'})
+CREATE(l11:Lectures{name:'ESE401'})
+CREATE(l12:Lectures{name:'ESE331'})
+CREATE(l13:Lectures{name:'ESE499'})
+CREATE(l14:Lectures{name:'ENE501'})
+CREATE(l15:Lectures{name:'ENE510'})
+CREATE(l16:Lectures{name:'ENE520'})
+CREATE(l17:Lectures{name:'ENE599'})
+CREATE(l18:Lectures{name:'ENE524'})
+CREATE(l19:Lectures{name:'ENE502'})
+CREATE(l20:Lectures{name:'ENE540'})
+CREATE(l21:Lectures{name:'ENE530'})
+
+CREATE(i1:Instructor{dept_name:'Energy Systems Engineering', name:'Gülden Gökçen Akkurt', title:'Prof. Dr.', lectures:['ESE321', 'ESE301', 'ENE530']})
+CREATE(i2:Instructor{dept_name:'Energy Systems Engineering', name:'Ferhat Bingöl', title:'Dr.', lectures:['ESE311', 'ESE420', 'ENE540']})
+CREATE(i3:Instructor{dept_name:'Energy Systems Engineering', name:'Güray Yıldız', title:'Dr.', lectures:['ESE440', 'ENE501', 'ESE499']})
+CREATE(i4:Instructor{dept_name:'Energy Systems Engineering', name:'Başar Çağlar', title:'Dr.', lectures:['ENE510', 'ESE201', 'ENE502', 'ESE331']})
+CREATE(i5:Instructor{dept_name:'Energy Systems Engineering', name:'Ziya Haktan Karadeniz', title:'Assoc. Prof. Dr.', lectures:['ESE406', 'ESE410', 'ENE524', 'ESE401']})
+CREATE(i6:Instructor{dept_name:'Energy Systems Engineering', name:'Selçuk Erol', title:'Dr.', lectures:['ENE520', 'ENE599', 'ESE101', 'ESE301']})
+
+// ------------------------CONSTRAINTS-------------------------
+
+CREATE CONSTRAINT ON (i:Instructor) ASSERT i.name IS UNIQUE
+CREATE CONSTRAINT ON (l:Lectures) ASSERT l.name IS UNIQUE
+CREATE CONSTRAINT ON (t:Title) ASSERT t.name IS UNIQUE
+CREATE CONSTRAINT ON (d:Departments) ASSERT d.name IS UNIQUE
+CREATE CONSTRAINT ON (f:Faculty) ASSERT f.name IS UNIQUE
+CREATE CONSTRAINT ON (u:University) ASSERT u.name IS UNIQUE
+
+// ------------------------RELATIONS-------------------------
+
+MATCH (f:Faculty), (d:Departments)
+WHERE d.faculty=f.name
+CREATE UNIQUE (d)-[r:BELONGS_TO]->(f)
+
+MATCH (i:Instructor), (d:Departments)
+WHERE i.dept_name = d.name
+CREATE UNIQUE (i)-[r:WORKS_IN]->(d)
+
+MATCH (i:Instructor), (l:Lectures)
+WHERE l.name IN i.lectures
+CREATE UNIQUE (i)-[:TEACHES]->(l)
+
+MATCH (i:Instructor), (t:Title)
+WHERE i.title = t.name
+CREATE UNIQUE (i)-[r:TITLE_IS]->(t)
+
+MATCH(u:University), (f:Faculty)
+WHERE f.name = 'Engineering' AND u.name='IZTECH'
+CREATE UNIQUE (f)-[:FACULTY_OF]->(u)
+
+
+// ------------------------QUERIES---------------------------
+Q1:
+Retrieve the names of all departments that belong to the Faculty of Engineering:
+MATCH (f:Faculty {name: "Engineering"})<-[:BELONGS_TO]-(d:Departments)
+RETURN d.name
+
+Q2:
+Show the names of all departments that belong to the Faculty of Engineering:
+MATCH p=(d:Departments)-[k:BELONGS_TO]->(f:Faculty)-[r:FACULTY_OF]->(u:University) 
+RETURN p
+
+Q3:
+Retrieve the names of all instructors who work in the Department of Computer Engineering:
+MATCH (d:Departments {name: "Computer Engineering"})<-[:WORKS_IN]-(i:Instructor)
+RETURN i.name
+
+Q4:
+Show the names of all instructors who work in the Department of Computer Engineering
+MATCH (i:Instructor)-[:WORKS_IN]->(d:Departments)
+WHERE d.name = 'Computer Engineering'
+RETURN i, d
+
+Q5:
+Retrieve the names of all instructors who teaches lectures that starts with "SEDS"
+MATCH (i:Instructor)-[:TEACHES]->(l:Lectures)
+WHERE l.name STARTS WITH "SEDS"
+RETURN i.name
+
+Q6:
+Show the names of all instructors who teaches lectures that starts with "SEDS"
+MATCH (i:Instructor)-[:TEACHES]->(l:Lectures)
+WHERE l.name STARTS WITH "SEDS"
+RETURN i, l
+
+Q7:
+Retrieve the names of all the lectures taught by an instructor with name "Damla Oğuz":
+MATCH (i:Instructor)-[:TEACHES]->(l:Lectures)
+WHERE i.name = "Damla Oğuz"
+RETURN l
+
+Q8:
+Show the names of all the lectures taught by an instructor with name "Damla Oğuz" and her title:
+MATCH (i:Instructor)-[:TEACHES]->(l:Lectures)
+WHERE i.name = "Damla Oğuz"
+MATCH (i)-[:TITLE_IS]->(t:Title)
+RETURN i, l, t
+
+Q9:
+Show the whole database
+MATCH(n) RETURN(n)
